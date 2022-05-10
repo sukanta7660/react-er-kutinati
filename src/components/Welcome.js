@@ -1,3 +1,9 @@
-import React from "react";
+import React, {Component} from "react";
 
-import ReactDOM from "react-dom/client";
+class Welcome extends Component {
+    render() {
+        return <h1>Hi From Welcome Class Component</h1>;
+    }
+}
+
+export default Welcome
