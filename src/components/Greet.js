@@ -2,12 +2,13 @@ import React, {Component} from 'react';
 
 class Greet extends Component{
     render() {
+        const {name, title, children} = this.props
         return (
             <div>
                 <h1>
-                    Hello, { this.props.name } { this.props.surName }
+                    Hello, { name } { title }
                 </h1>
-                { this.props.children }
+                { children }
             </div>
         );
     }
