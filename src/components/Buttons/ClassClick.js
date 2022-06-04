@@ -1,17 +1,27 @@
 import {Component} from 'react'
+import ButtonComp from "../Utils/ButtonComp";
 
 class ClassClick extends Component {
 
+    constructor(props) {
+
+        super(props);
+
+        this.state = {
+            name: 'sukanta purkayastha',
+            message: 'Welcome to reactive world.'
+        }
+
+    }
+
     clickHandler = () => {
-        console.log('Class Button clicked')
+        alert(`Hi sukanta`);
     }
 
     render() {
         return (
             <div>
-                <button onClick={ this.clickHandler }>
-                    Click this Class Button
-                </button>
+                <ButtonComp handler={this.clickHandler}/>
             </div>
         )
     }
