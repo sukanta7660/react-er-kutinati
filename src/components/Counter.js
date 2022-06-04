@@ -1,4 +1,5 @@
 import {Component} from 'react';
+import ButtonComp from "./Utils/ButtonComp";
 
 class Counter extends Component{
 
@@ -35,8 +36,9 @@ class Counter extends Component{
         return (
             <div>
                 <h4>Count - { this.state.count }</h4>
-                <button onClick={ () => this.incrementFive() }>Increment</button> &nbsp;
-                <button onClick={ () => this.decrement() }>Decrement</button>
+                {/*<button onClick={ () => this.incrementFive() }>Increment</button>*/}
+                <ButtonComp handler={ () => this.incrementFive() } btnTxt="Increment"/> &nbsp;
+                <ButtonComp handler={ () => this.decrement() } btnTxt="Decrement"/>
             </div>
         )
     }
