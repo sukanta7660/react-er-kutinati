@@ -15,13 +15,13 @@ class ClassClick extends Component {
     }
 
     clickHandler = () => {
-        alert(`Hi sukanta`);
+        alert(`Hi ${this.state.name}, ${this.state.message}`);
     }
 
     render() {
         return (
             <div>
-                <ButtonComp handler={this.clickHandler}/>
+                <ButtonComp handler={this.clickHandler} btnTxt="Click btn"/>
             </div>
         )
     }

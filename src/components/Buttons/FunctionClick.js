@@ -1,4 +1,5 @@
 import React from 'react';
+import ButtonComp from "../Utils/ButtonComp";
 
 const FunctionClick = () => {
 
@@ -8,9 +9,7 @@ const FunctionClick = () => {
 
     return (
         <div>
-            <button onClick={ clickHandler }>
-                Click this Function Button
-            </button>
+            <ButtonComp btnTxt="Functional Button" handler={ clickHandler }/>
         </div>
     )
 }

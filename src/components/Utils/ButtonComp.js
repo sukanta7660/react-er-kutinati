@@ -2,12 +2,12 @@ import React from 'react';
 
 const ButtonComp = (props) => {
 
-    const { handler } = props
+    const { handler, btnTxt } = props;
 
     return (
         <div>
             <button onClick={ handler }>
-                Click this Method Binder
+                {btnTxt}
             </button>
         </div>
     )
