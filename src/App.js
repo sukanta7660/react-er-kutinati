@@ -7,6 +7,7 @@ import Greet from "./components/Greet";
 import ClassClick from "./components/Buttons/ClassClick";
 import FunctionClick from "./components/Buttons/FunctionClick";
 import EventBind from "./components/Buttons/EventBind";
+import PersonList from "./components/PersonList";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <EventBind/>
 
         <hr/>
+        <PersonList />
     </div>
   );
 }
