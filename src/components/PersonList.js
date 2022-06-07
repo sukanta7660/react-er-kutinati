@@ -28,7 +28,7 @@ const PersonList = () => {
             designation: 'Intern'
         },
     ];
-    const personList = persons.map(person => <Person key={person.id} person={person}/>)
+    const personList = persons.map((person, index) => <Person key={index} person={person}/>)
     return (
         <div>
             { personList }
