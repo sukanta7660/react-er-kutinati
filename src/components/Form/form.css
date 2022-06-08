@@ -1,0 +1,12 @@
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -49%);
+}
+.input-type-text {
+    padding: 0;
+}
+.select-option {
+    width: 170px;
+}
