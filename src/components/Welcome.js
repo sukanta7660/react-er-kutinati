@@ -1,11 +1,11 @@
 import React from 'react';
 
 const Welcome = props => {
-    const {name, surname, children} = props
+    const {welcomeText, children} = props
     return (
         <div>
             <h1>
-                Hello, { name } { surname }
+                { welcomeText }
             </h1>
             { children }
         </div>
